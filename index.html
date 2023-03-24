@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+        </head>
+        <body>
+    <h1 style="text-align: center;">Curriculum</h1>
+    <div>
+        <fieldset class="contenedor">
+            <legend style="text-align: center;">Perfil</legend>
+        <img src="imagenes/42.jpg" alt="foto de perfil" class="imagen">
+        <form>
+            <label for="fname">Nombre:</label><br>
+            <input type="text" class="fname" name="fname" value="Dimitri"><br>
+            <label for="lname">Apellido:</label><br>
+            <input type="text" class="lname" name="lname" value="smith"><br>
+            <label for="Edad">Edad</label><br>
+            <input type="number" class="edad" name="quantity" min="1" max="99" value="25"><br>
+            <label for="numer">Numero Telefonico:</label><br>
+            <input type="number" class="num-tel"id="phone" name="numero" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required value="2545130090"><br>
+        </form>
+    </fieldset>
+    <div class="container">
+    <div class="pf1">
+    <p>Descripcion</p>
+    <textarea name="descripcion" class="Descripcion" cols="50" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, laborum velit omnis veritatis quibusdam voluptatum nemo nihil repellendus sed ut, at, doloribus quaerat eaque accusamus quidem atque deserunt molestias delectus?</textarea><br>
+    </div>
+    <div class="pf2">
+    <p2 >Formacion Academica</p2>
+    <form action="/action_page.php">
+        <input  class="action" list="Estudios" name="Estudios">
+        <datalist id="Estudios">
+        <option value="Primaria Completa">
+        <option value="Primaria Incompleta">
+        <option value="Secundaria Completa">
+        <option value="Secundaria Incompleta">
+        <option value="Universidad">
+        </datalist>
+    </form><br>
+</div>
+</div>
+<div class="container2">
+    <div class="pf3">
+    <p3>Experiencia laboral</p3><br>
+    <textarea name="experiencia" class="exp" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur earum nostrum nesciunt exercitationem ea qui similique hic ipsum repellat, impedit, temporibus facere fuga natus nobis quas molestias laudantium cum minima.</textarea><br>
+</div>
+<div class="pf4">
+    <samp style="font-family: Arial, Helvetica, sans-serif;">¿Realizo algun curso de formacion?</samp><br>
+    <label for="Si">Si</label>
+    <input type="radio" name="option" id="Si">
+    <label for="No">No</label>
+    <input type="radio" name="option" id="No"><br>
+    <p4>¿Cuales Cursos de formacion Realizo?</p4><br>
+    <textarea name="cursos" class="curs" cols="50" rows="10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fugiat dolorum itaque voluptatum quaerat iusto quia voluptate in natus sequi sapiente, vero quos minima, sunt fugit. Quisquam ad molestiae illo?</textarea>
+</div>
+</div>
+</div>
+
+<button type= "button" id= "button_color" >Cambiar color de fondo!</button>
+    
+<button type= "button" id= "button_default" >restrablecer color de fondo!</button>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="index.js"></script>
+</body>
+</html>
